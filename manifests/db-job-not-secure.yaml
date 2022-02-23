@@ -11,11 +11,6 @@ spec:
       containers:
       - image: sikiryl/dbup
         name: db-job
-        envFrom:
-        - secretRef:
-            name: <secret-name>
-        - configMapRef:
-            name: <configmap-name>
         resources: {}
       restartPolicy: Never
 status: {}
